@@ -84,7 +84,7 @@ const ResultValidation: React.FC = () => {
                         <td className="px-4 py-2 text-sm text-muted-foreground">{result.unit}</td>
                         <td className="px-4 py-2 text-sm text-muted-foreground">{result.referenceRange}</td>
                         <td className="px-4 py-2">
-                          {result.flag && result.flag !== '' && (
+                          {result.flag && (
                             <span className={`text-xs font-medium flex items-center gap-1 ${
                               result.flag === 'Normal' ? 'text-success' :
                               result.flag === 'High' ? 'text-destructive' :

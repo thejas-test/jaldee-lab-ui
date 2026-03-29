@@ -122,7 +122,7 @@ const ReportPreview: React.FC = () => {
                           <tr key={idx} className="border-b last:border-0">
                             <td className="py-1.5">{r.componentName}</td>
                             <td className={`py-1.5 font-medium ${r.flag === 'High' || r.flag === 'Critical' ? 'text-destructive' : r.flag === 'Low' ? 'text-info' : ''}`}>
-                              {r.value} {r.flag && r.flag !== 'Normal' && r.flag !== '' ? `(${r.flag})` : ''}
+                              {r.value} {r.flag && r.flag !== 'Normal' ? `(${r.flag})` : ''}
                             </td>
                             <td className="py-1.5 text-muted-foreground">{r.unit}</td>
                             <td className="py-1.5 text-muted-foreground">{r.referenceRange}</td>
